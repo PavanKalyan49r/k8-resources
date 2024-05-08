@@ -21,3 +21,7 @@ spec:
   selector:
     app: nginx
     demo: service
+  ports:
+  - protocol: TCP
+    port: 80 #service-port
+    taregetPort: 80 #container port
