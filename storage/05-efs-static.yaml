@@ -41,7 +41,7 @@ spec:
     - name: nginx-data
       mountPath: /usr/share/nginx/html
   nodeSelector:
-    zone: 1a
+    zone: 1b
   volumes:
   - name: nginx-data
     persistentVolumeClaim:
@@ -58,4 +58,4 @@ spec:
   ports:
   - protocol: TCP
     port: 80 #service-port
-    targetPort: 80 #container port
+    targetPort: 80 #container-port
